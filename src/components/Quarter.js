@@ -2,14 +2,15 @@ import React from 'react';
 
 const Quarter = ({ quarter, person, prize }) => {
   return (
-    <div>
-      <h1>{quarter}</h1>
+    <div className="quarterCard">
+      <h1 className="quarterName">{quarter}</h1>
       {person ? (
         <div className="winningName">
-          {person} is the winner of {prize}
+          <span className="winningPerson">{person} </span>is the winner of{' '}
+          <span className="prize">{prize}</span>
         </div>
       ) : (
-        <div>No winners yet playa</div>
+        <div className="noWinnerYet">No ballers yet :( </div>
       )}
     </div>
   );

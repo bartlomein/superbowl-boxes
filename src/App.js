@@ -41,7 +41,8 @@ class App extends Component {
   componentDidMount() {
     this.getGameData();
 
-    window.setInterval(() => this.updateScore('home'), 30000);
+    window.setInterval(() => this.updateScore(), 5000);
+    window.setInterval(() => this.getGameData(), 60000);
   }
 
   updateScore = () => {
@@ -195,6 +196,12 @@ class App extends Component {
     } = this.state;
     return (
       <div className="App">
+        <div className="welcome">
+          Check if you an EC Baller <br />
+          <span className="lit">
+            for Superbowl LIII<span className="t">(t)</span>
+          </span>
+        </div>
         <Quarter
           quarter="1st Quarter"
           person={firstQuarterWinner}
@@ -207,6 +214,9 @@ class App extends Component {
           prize="$75"
         />
         <Quarter quarter="Final" person={finalWinner} prize="$225" />
+        <div className="footer">
+          made by <span className="devgod">earthcamdevgod1</span>
+        </div>
       </div>
     );
   }
