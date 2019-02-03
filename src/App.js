@@ -175,7 +175,9 @@ class App extends Component {
 
   getGameData = () => {
     axios
-      .get('https://www.nfl.com/liveupdate/scores/scores.json')
+      .get('http://www.nfl.com/liveupdate/scores/scores.json', {
+        crossdomain: true
+      })
       .then(response => {
         const stats = response.data[2019020300];
         this.setState({
