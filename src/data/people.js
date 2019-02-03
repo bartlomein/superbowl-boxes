@@ -55,7 +55,7 @@ const people = {
     'PK',
     'Jorjeeee',
     'GF',
-    'Tommy Raybould ',
+    'Tommy "wont add me on instagram" Raybould ',
     'Navatta',
     'Barty Crouch Jr',
     'JD',
@@ -80,7 +80,7 @@ const people = {
     'Eli',
     'AD',
     'GF',
-    'Tommy Raybould',
+    'Tommy "wont add me on instagram" Raybould',
     'JMN',
     'Aman',
     'Karl D'
