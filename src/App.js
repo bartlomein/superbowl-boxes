@@ -200,7 +200,7 @@ class App extends Component {
         <div className="welcome">
           Check if you an EC Baller <br />
           <span className="lit">
-            for Superbowl LIII<span className="t">(t)</span>
+            for Superbowl LIII<span className="t">t</span>
           </span>
         </div>
         <Quarter
