@@ -174,8 +174,10 @@ class App extends Component {
   componentDidUpdate() {}
 
   getGameData = () => {
+    const proxyurl = 'https://cors-anywhere.herokuapp.com/';
+    const url = 'https://www.nfl.com/liveupdate/scores/scores.json'; // site that doesn’t send Access-Control-*
     axios
-      .get('http://www.nfl.com/liveupdate/scores/scores.json')
+      .get(proxyurl + url)
       .then(response => {
         const stats = response.data[2019020300];
         this.setState({
