@@ -2,6 +2,7 @@
 body {
   background-color: #02c39a;
   color: white;
+  height: 100vh;
 }
 
 .App {
@@ -23,6 +24,7 @@ body {
 .quarterCard {
   background-color: #0fa3b1;
   max-width: 400px;
+  width: 100%;
   border-radius: 5px;
   margin: 15px auto;
   box-shadow: 5px 5px 20px #05668d;
