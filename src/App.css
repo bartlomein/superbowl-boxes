@@ -15,7 +15,7 @@ body {
 
 .welcome {
   font-family: 'Bangers', cursive;
-  font-size: 20px;
+  font-size: 30px;
   padding-top: 20px;
 }
 .lit {
@@ -32,7 +32,7 @@ body {
 }
 .winningPerson {
   font-family: 'Passion One', cursive;
-  font-size: 25px;
+  font-size: 30px;
 }
 .t {
   font-family: 'IBM Plex Mono', monospace;
