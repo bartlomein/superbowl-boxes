@@ -1,9 +1,15 @@
-export default function getGameData() {
-  fetch('http://www.nfl.com/liveupdate/scores/scores.json')
-    .then(function(response) {
-      return response.json();
+import axios from 'axios';
+
+const getGameData = () => {
+  axios
+    .get('http://www.nfl.com/liveupdate/scores/scores.json')
+    .then(response => {
+      const stats = response.data;
+      return stats;
     })
-    .then(function(myJson) {
-      console.log(JSON.stringify(myJson));
+    .catch(error => {
+      return error;
     });
-}
+};
+
+export default getGameData;
