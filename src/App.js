@@ -40,9 +40,8 @@ class App extends Component {
 
   componentDidMount() {
     this.getGameData();
-
     window.setInterval(() => this.updateScore(), 5000);
-    window.setInterval(() => this.getGameData(), 60000);
+    window.setInterval(() => this.getGameData(), 30000);
   }
 
   updateScore = () => {
@@ -176,7 +175,7 @@ class App extends Component {
 
   getGameData = () => {
     axios
-      .get('http://www.nfl.com/liveupdate/scores/scores.json')
+      .get('https://www.nfl.com/liveupdate/scores/scores.json')
       .then(response => {
         const stats = response.data[2019020300];
         this.setState({
