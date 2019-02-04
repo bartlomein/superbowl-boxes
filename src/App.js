@@ -211,10 +211,25 @@ class App extends Component {
         <Quarter quarter="Halftime" person={halftimeWinner} prize="$125" />
         <Quarter
           quarter="3rd Quarter"
-          person={thirdQuarterWinner}
+          person={
+            this.state.data == '3' ||
+            this.state.data == '4' ||
+            this.state.data == 'Final'
+              ? { thirdQuarterWinner }
+              : null
+          }
           prize="$75"
         />
-        <Quarter quarter="Final" person={finalWinner} prize="$225" />
+        <Quarter
+          quarter="Final"
+          person={
+            (this.state.data == this.state.data) == '4' ||
+            this.state.data == 'Final'
+              ? { finalWinner }
+              : null
+          }
+          prize="$225"
+        />
         <div className="footer">
           made by <span className="devgod">earthcamdevgod1</span>
         </div>
