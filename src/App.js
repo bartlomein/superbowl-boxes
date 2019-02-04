@@ -223,7 +223,7 @@ class App extends Component {
         <Quarter
           quarter="Final"
           person={
-            this.state.data.qtr === '4' || this.state.data.qrt === 'Final'
+            this.state.data.qtr === '4' || this.state.data.qtr === 'Final'
               ? { finalWinner }
               : null
           }
