@@ -212,9 +212,9 @@ class App extends Component {
         <Quarter
           quarter="3rd Quarter"
           person={
-            this.state.data === '3' ||
-            this.state.data === '4' ||
-            this.state.data === 'Final'
+            this.state.data.qtr === '3' ||
+            this.state.data.qtr === '4' ||
+            this.state.data.qtr === 'Final'
               ? { thirdQuarterWinner }
               : null
           }
@@ -223,7 +223,7 @@ class App extends Component {
         <Quarter
           quarter="Final"
           person={
-            this.state.data === '4' || this.state.data === 'Final'
+            this.state.data.qtr === '4' || this.state.data.qrt === 'Final'
               ? { finalWinner }
               : null
           }
